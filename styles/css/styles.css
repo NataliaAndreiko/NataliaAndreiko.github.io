@@ -1,1 +1,4 @@
-@import url(../reset.css);/*# sourceMappingURL=styles.css.map */
+@import url(../reset.css);
+body {
+  background-color: blanchedalmond;
+}/*# sourceMappingURL=styles.css.map */
