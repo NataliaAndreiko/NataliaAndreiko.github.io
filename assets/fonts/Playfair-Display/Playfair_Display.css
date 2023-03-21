@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Lato';
+    src: url("PlayfairDisplay-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url("PlayfairDisplay-Italic.ttf");
+    font-style: italic;
+    font-weight: 400;
+}

@@ -1,4 +1,5 @@
-@import url(../scss/reset.css);
+@import url(../source/reset.css);
+@import url(../source/fonts.css);
 body {
   background-image: url("../../assets/images/first-screen-image_light.png");
   background-size: contain;
