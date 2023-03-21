@@ -530,20 +530,21 @@ html.dark .button {
 html.dark .button-background {
   background-color: #53F3CD;
 }
-html.dark .button:hover html.dark .button-background {
-  background: #02E0AB;
+html.dark .button:hover .button-background {
+  background-color: #02E0AB;
 }
 html.dark .button:hover {
   color: #53F3CD;
 }
 html.dark .button--bordered {
+  background-color: transparent;
   border: 1px solid #515773;
 }
 html.dark .button--bordered:hover {
   border: 1px solid #02E0AB;
   color: #53F3CD;
 }
-html.dark .button--bordered:hover html.dark .button-background {
+html.dark .button--bordered:hover .button-background {
   background: #02E0AB;
 }
 html.dark .header__nav-link {
@@ -591,7 +592,7 @@ html.dark .notion__content-wrapper {
 html.dark .notion__item-title {
   color: #FFFFFF;
 }
-html.dark .notion__item-description-list li {
+html.dark .notion__item-description-list-item {
   color: #FFFFFF;
 }
 html.dark .reviews__text-block-title {

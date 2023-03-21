@@ -777,12 +777,13 @@ html.dark {
     
     .button {
         color: $light-button-bg-color;
+
         &-background {
             background-color: $light-button-bg-color;
         }
     
-        &:hover &-background {
-            background: $light-button-hovered;
+        &:hover .button-background {
+            background-color: $light-button-hovered;
         }
     
         &:hover {
@@ -790,6 +791,7 @@ html.dark {
         }
     
         &--bordered{
+            background-color: transparent;
             border: 1px solid $light-delim-colour;
         }
     
@@ -798,10 +800,11 @@ html.dark {
             color: $light-button-bg-color;
         }
     
-        &--bordered:hover &-background {
+        &--bordered:hover .button-background {
             background: $light-button-hovered;
         }
     }
+    
     
     .header {
         &__nav {
@@ -900,7 +903,7 @@ html.dark {
     
             &-description-list{
 
-                li {
+                &-item {
                     color: $light-text-color;
                 }
             }
