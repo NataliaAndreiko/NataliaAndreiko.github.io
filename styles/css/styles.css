@@ -1,5 +1,6 @@
 @import url(../source/reset.css);
 @import url(../source/fonts.css);
+@import url(../source/checkbox.css);
 * {
   transition: all 0.1s ease-in;
 }
@@ -71,6 +72,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   gap: 30px;
 }
 .header__nav-link {

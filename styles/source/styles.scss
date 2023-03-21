@@ -1,6 +1,6 @@
 @import url(../source/reset.css);
 @import url(../source/fonts.css);
-
+@import url(../source/checkbox.css);
 
 *{
     transition: all .1s ease-in;
@@ -93,6 +93,7 @@ body {
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between;
+        align-items: center;
         gap: 30px;
 
         &-link {
