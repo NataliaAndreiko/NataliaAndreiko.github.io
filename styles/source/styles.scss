@@ -50,9 +50,27 @@ body {
         bottom: 0%;
     }
 
+    &:hover &-background {
+        background: #E54F3A;
+    }
+
+    &:hover {
+        color: #F1897B;
+    }
+
     &--bordered{
+        background-color: transparent;
         padding: 35px 90px;
         border: 1px solid #E4E4E4;
+    }
+
+    &--bordered:hover {
+        border: 1px solid #E64F3A;
+        color: #F1897B;
+    }
+
+    &--bordered:hover &-background {
+        background: #E54F3A;
     }
 }
 
@@ -220,7 +238,7 @@ body {
             font-size: 18px;
             color: #262A3F;
             opacity: 0.8;
-
+            line-height: 26px;
         }    
     }
 
@@ -324,6 +342,10 @@ body {
         gap: 50px;
     }
 
+    &-video {
+        cursor: pointer;
+    }
+
     &__text-block{
         display: flex;
         flex-direction: column;
@@ -344,6 +366,7 @@ body {
             font-size: 18px;
             color: #262A3F;
             opacity: 0.8;
+            line-height: 26px;
         }
     }
 }
@@ -569,6 +592,11 @@ body {
                 font-weight: 300;
                 line-height: 26px;
                 opacity: 0.6;
+            }
+
+            &-link {
+                text-decoration: none;
+                color: #262A3F;
             }
         }
     }

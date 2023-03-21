@@ -46,9 +46,23 @@ body {
   top: 45.83%;
   bottom: 0%;
 }
+.button:hover .button-background {
+  background: #E54F3A;
+}
+.button:hover {
+  color: #F1897B;
+}
 .button--bordered {
+  background-color: transparent;
   padding: 35px 90px;
   border: 1px solid #E4E4E4;
+}
+.button--bordered:hover {
+  border: 1px solid #E64F3A;
+  color: #F1897B;
+}
+.button--bordered:hover .button-background {
+  background: #E54F3A;
 }
 
 .header {
@@ -180,6 +194,7 @@ body {
   font-size: 18px;
   color: #262A3F;
   opacity: 0.8;
+  line-height: 26px;
 }
 
 .advantages .wrapper {
@@ -264,6 +279,9 @@ body {
   flex-direction: column;
   gap: 50px;
 }
+.example-video {
+  cursor: pointer;
+}
 .example__text-block {
   display: flex;
   flex-direction: column;
@@ -283,6 +301,7 @@ body {
   font-size: 18px;
   color: #262A3F;
   opacity: 0.8;
+  line-height: 26px;
 }
 
 .notion .wrapper {
@@ -474,4 +493,8 @@ body {
   font-weight: 300;
   line-height: 26px;
   opacity: 0.6;
+}
+.footer__content-item-link {
+  text-decoration: none;
+  color: #262A3F;
 }/*# sourceMappingURL=styles.css.map */
