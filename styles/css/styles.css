@@ -1,4 +1,73 @@
-@import url(../reset.css);
+@import url(../scss/reset.css);
 body {
-  background-color: blanchedalmond;
+  background-image: url("../../assets/images/first-screen-image_light.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.wrapper {
+  width: 1170px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.header {
+  margin: 30px 0 0;
+  width: 100%;
+  padding: 24px 0;
+  -webkit-backdrop-filter: blur(4.5px);
+  backdrop-filter: blur(4.5px);
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.244636) 24.1%, rgba(255, 255, 255, 0) 47.19%), rgba(255, 255, 255, 0.02);
+}
+.header .wrapper {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-logo {
+  width: 108px;
+  height: 32px;
+}
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+}
+.header__nav-link {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  color: #262A3F;
+  text-decoration: none;
+}
+
+.join-now {
+  margin: 150px 0;
+}
+.join-now .wrapper {
+  flex-direction: column;
+  gap: 50px;
+}
+.join-now__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+.join-now__content-title {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 52px;
+}
+.join-now__content-subtitle {
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  color: #262A3F;
+  width: 80%;
 }/*# sourceMappingURL=styles.css.map */
