@@ -620,6 +620,7 @@ body {
 
 }
 
+
 html.dark {
     $light-text-color: #FFFFFF;
     $light-accent-color: #689FF2;
@@ -699,7 +700,7 @@ html.dark {
                 &-title {
                     color: $light-text-color;
                 }
-    
+
                 &-description {
                     color: $light-text-color;
                 }
@@ -714,7 +715,6 @@ html.dark {
                 color: $light-text-color;
             }    
         }
-    
     }
     
     
@@ -738,21 +738,13 @@ html.dark {
     
     
     .example {
-
-
-    
         &__text-block{
-
-    
             &-title{
-
                 color: $light-text-color;
             }
     
             &-description {
-  
                 color: $light-text-color;
-
             }
         }
     }
@@ -760,18 +752,13 @@ html.dark {
     .notion{
 
         &__content-wrapper {
-
             background: $light-bg-color;
-
-    
         }
     
         &__item{   
     
             &-title {
-
                 color: $light-text-color;
-
             }
     
             &-description-list{
@@ -799,36 +786,24 @@ html.dark {
     
     
     .contact {
-
-    
         .delimiter {
             background-color: $light-delim-colour;
-
         }
     
         &__content{
-
-    
             &__text-block{
-
-    
                 &-title{
-
                     color: $light-text-color;
                 }
     
                 &-description{
-
                     color: $light-text-color;
                 }
             }
     
             &__form{
- 
                 &-item{
-
                     border-bottom: 1px solid $light-text-color;
- 
                     color: $light-text-color;
 
                 }
@@ -839,7 +814,6 @@ html.dark {
     .footer{
         .delimiter {
             background-color: $light-delim-colour;
-
         }
         &__content {
 
@@ -850,6 +824,5 @@ html.dark {
                 }
             }
         }
-    
     }
 }
