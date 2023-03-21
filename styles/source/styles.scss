@@ -1,25 +1,17 @@
 @import url(../source/reset.css);
 @import url(../source/fonts.css);
 
+
+*{
+    transition: all .1s ease-in;
+}
+
 body {
     background-image: url("../../assets/images/first-screen-image_light.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top;
 }
-
-// .button {
-//     font-family: 'Lato';
-//     font-weight: 700;
-//     font-size: 20px;
-//     line-height: 20px;
-//     letter-spacing: 0.08em;
-//     text-transform: uppercase;
-//     color: #F1897B;
-//     -webkit-box-shadow: 10px 10px rgb(241, 137, 123, .3);
-//             box-shadow: 10px 10px rgb(241, 137, 123, .3);
-//     text-decoration: none;
-// }
 
 .wrapper {
     width: 1170px;
@@ -105,6 +97,11 @@ body {
             letter-spacing: 0.08em;
             color: #262A3F;
             text-decoration: none;
+            padding: 4px 0;
+
+            &:hover {
+                border-bottom: 3px solid rgb(241, 137, 123, 0.3);
+            }
         }
     }
 }
@@ -146,3 +143,79 @@ body {
     }
 }
 
+
+.statistic {
+    .wrapper {
+        background-image: url(../../assets/images/statistic-image.png);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 670px;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    &__content-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 65%;
+        padding: 45px 0;
+        background: #FFFFFF;
+        opacity: 0.9;
+    }
+
+    &__numbers {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            width: 370px;
+
+            &-title {
+                font-family: 'Playfair Display';
+                font-weight: 400;
+                font-size: 68px;
+                text-align: center;
+                color: #262A3F;
+            }
+
+            &-description {
+                font-family: 'Lato';
+                font-weight: 300;
+                font-size: 18px;
+                text-align: center;
+                color: #262A3F;
+                opacity: 0.8;
+            }
+
+        }
+        .delimiter {
+            background-color: #85BBB1;
+            height: 1px;
+            width: 100px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: flex-start;
+        &__text {
+            font-family: 'Lato';
+            font-weight: 300;
+            font-size: 18px;
+            color: #262A3F;
+            opacity: 0.8;
+
+        }    
+    }
+
+}
