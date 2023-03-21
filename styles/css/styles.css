@@ -45,6 +45,10 @@ body {
   top: 45.83%;
   bottom: 0%;
 }
+.button--bordered {
+  padding: 35px 90px;
+  border: 1px solid #E4E4E4;
+}
 
 .header {
   margin: 30px 0 0;
@@ -174,4 +178,298 @@ body {
   font-size: 18px;
   color: #262A3F;
   opacity: 0.8;
+}
+
+.advantages .wrapper {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px 0;
+  margin: 120px auto;
+}
+.advantages__item {
+  width: 570px;
+}
+.advantages__item-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px 0;
+  width: 480px;
+  padding: 45px;
+}
+.advantages__item-title {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 40px;
+  color: #262A3F;
+}
+.advantages__item-delimiter {
+  width: 570px;
+  height: 1px;
+  background-color: #E4E4E4;
+}
+.advantages__item-description {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  color: #262A3F;
+  opacity: 0.8;
+}
+
+.quote .wrapper {
+  background-image: url(../../assets/images/quote-background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1170px;
+  height: 400px;
+}
+.quote__text {
+  padding: 100px 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+}
+.quote__text-contents {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 32px;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  line-height: 46px;
+}
+.quote__text-by-line {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.08em;
+  color: #FFFFFF;
+}
+.quote__text .quote-icon {
+  position: absolute;
+  top: 80px;
+  right: 950px;
+}
+
+.example {
+  margin: 120px 0;
+}
+.example .wrapper {
+  width: 970px;
+  flex-direction: column;
+  gap: 50px;
+}
+.example__text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+}
+.example__text-block-title {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 40px;
+  color: #262A3F;
+}
+.example__text-block-description {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  color: #262A3F;
+  opacity: 0.8;
+}
+
+.notion .wrapper {
+  background-image: url(../../assets/images/statistic-image.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 540px;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 120px auto;
+}
+.notion__content-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 65%;
+  padding: 75px 0 75px 70px;
+  background: #FFFFFF;
+  opacity: 0.9;
+  gap: 70px 100px;
+}
+.notion__item {
+  width: 300px;
+}
+.notion__item-title {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 24px;
+  color: #262A3F;
+  margin-bottom: 15px;
+}
+.notion__item-description-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.reviews .wrapper {
+  flex-direction: column;
+  gap: 50px;
+  margin: 100px auto;
+}
+.reviews__text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.reviews__text-block-title {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  color: #262A3F;
+}
+.reviews__text-block-description {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  color: #262A3F;
+}
+.reviews__list {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.reviews__list-item {
+  width: 370px;
+  height: 340px;
+  position: relative;
+}
+.reviews__list-item__text-block {
+  background: rgba(25, 28, 41, 0.6);
+  background: rgba(25, 28, 41, 0.6);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  justify-content: space-between;
+  padding: 30px 40px;
+  height: 280px;
+}
+.reviews__list-item__text-block-notice, .reviews__list-item__text-block-by-line {
+  color: #FFFFFF;
+  z-index: 2;
+}
+.reviews__list-item__text-block-notice {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.8;
+  line-height: 26px;
+}
+.reviews__list-item__text-block-by-line {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.08em;
+}
+
+.contact .wrapper {
+  flex-direction: column;
+  gap: 60px;
+  margin: 100px auto;
+}
+.contact .delimiter {
+  background-color: #E4E4E4;
+  width: 100%;
+  height: 1px;
+}
+.contact__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contact__content__text-block, .contact__content__form {
+  display: flex;
+  flex-direction: column;
+}
+.contact__content__text-block {
+  gap: 30px;
+}
+.contact__content__text-block-title {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  color: #262A3F;
+}
+.contact__content__text-block-description {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  color: #262A3F;
+}
+.contact__content__form {
+  align-items: flex-start;
+  gap: 40px;
+}
+.contact__content__form-item {
+  width: 470px;
+  background-color: transparent;
+  border: 0;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(38, 42, 63, 0.1);
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  color: rgba(38, 42, 63, 0.5);
+  max-height: 80px;
+}
+
+.footer .wrapper {
+  flex-direction: column;
+}
+.footer .delimiter {
+  background-color: #E4E4E4;
+  width: 100%;
+  height: 1px;
+}
+.footer__content, .footer__content__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer__content__wrapper, .footer__content__wrapper__wrapper {
+  gap: 30px;
+}
+.footer__content {
+  margin: 30px 0;
+}
+.footer__content-item {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+  color: #262A3F;
+}
+.footer__content-item--lighter {
+  font-weight: 300;
+  line-height: 26px;
+  opacity: 0.6;
 }/*# sourceMappingURL=styles.css.map */
