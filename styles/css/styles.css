@@ -238,7 +238,7 @@ body {
 }
 
 .quote .wrapper {
-  background-image: url(../../assets/images/quote-background-1.webp);
+  background-image: url(../../assets/images/quote-background.webp);
   background-repeat: no-repeat;
   background-size: contain;
   width: 1170px;
@@ -345,6 +345,12 @@ body {
   gap: 15px;
 }
 .notion__item-description-list li {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  opacity: 0.8;
   color: #262A3F;
 }
 
