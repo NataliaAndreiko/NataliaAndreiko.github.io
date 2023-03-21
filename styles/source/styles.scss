@@ -17,7 +17,7 @@ $light-bg-color: #FFFFFF;
 
 body {
     background-color: $light-bg-color;
-    background-image: url("../../assets/images/first-screen-image_light.png");
+    background-image: url("../../assets/images/first-screen-image_light.webp");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top;
@@ -186,7 +186,7 @@ body {
 
 .statistic {
     .wrapper {
-        background-image: url(../../assets/images/statistic-image.png);
+        background-image: url(../../assets/images/statistic-image.webp);
         background-position: left;
         background-repeat: no-repeat;
         background-size: contain;
@@ -351,7 +351,7 @@ body {
 
 .quote {
     .wrapper {
-        background-image: url(../../assets/images/quote-background.png);
+        background-image: url(../../assets/images/quote-background-1.webp);
         background-repeat: no-repeat;
         background-size: contain;
         width: 1170px;
@@ -445,7 +445,7 @@ body {
 
 .notion{
     .wrapper {
-        background-image: url(../../assets/images/statistic-image.png);
+        background-image: url(../../assets/images/statistic-image.webp);
         background-position: left;
         background-repeat: no-repeat;
         background-size: contain;
@@ -755,7 +755,7 @@ html.dark {
 
     body {  
         background-color: $light-bg-color;
-        background-image: url("../../assets/images/first-screen-image_dark.png");
+        background-image: url("../../assets/images/first-screen-image_dark.webp");
     }
 
     .title--colored {
