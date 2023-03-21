@@ -2,11 +2,21 @@
 @import url(../source/fonts.css);
 @import url(../source/checkbox.css);
 
+
+
+$light-text-color: #262A3F;
+$light-accent-color: #85BBB1;
+$light-button-bg-color: #f1897b;
+$light-delim-colour: #E4E4E4;
+$light-button-hovered: #E64F3A;
+$light-bg-color: #FFFFFF;
+
 *{
     transition: all .1s ease-in;
 }
 
 body {
+    background-color: $light-bg-color;
     background-image: url("../../assets/images/first-screen-image_light.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -23,7 +33,7 @@ body {
 
 .title--colored {
     font-style: italic;
-    color: #85BBB1;
+    color: $light-accent-color;
 }
 
 .button {
@@ -33,14 +43,14 @@ body {
     line-height: 20px;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: #F1897B;
+    color: $light-button-bg-color;
     text-decoration: none; 
     border: 0;
     background-color: transparent;
     position: relative;
 
     &-background {
-        background-color: #F1897B;
+        background-color: $light-button-bg-color;
         opacity: 0.3;
         height: 13px;
         position: absolute;
@@ -51,26 +61,26 @@ body {
     }
 
     &:hover &-background {
-        background: #E54F3A;
+        background: $light-button-hovered;
     }
 
     &:hover {
-        color: #F1897B;
+        color: $light-button-bg-color;
     }
 
     &--bordered{
         background-color: transparent;
         padding: 35px 90px;
-        border: 1px solid #E4E4E4;
+        border: 1px solid $light-delim-colour;
     }
 
     &--bordered:hover {
-        border: 1px solid #E64F3A;
-        color: #F1897B;
+        border: 1px solid $light-button-hovered;
+        color: $light-button-bg-color;
     }
 
     &--bordered:hover &-background {
-        background: #E54F3A;
+        background: $light-button-hovered;
     }
 }
 
@@ -119,7 +129,7 @@ body {
             font-weight: 400;
             font-size: 14px;
             letter-spacing: 0.08em;
-            color: #262A3F;
+            color: $light-text-color;
             text-decoration: none;
             padding: 4px 0;
 
@@ -154,6 +164,8 @@ body {
             font-weight: 400;
             font-size: 44px;
             line-height: 52px;
+            color: $light-text-color;
+
         }
 
         &-subtitle {
@@ -161,7 +173,7 @@ body {
             font-weight: 300;
             font-size: 18px;
             line-height: 26px;
-            color: #262A3F;
+            color: $light-text-color;
             width: 80%;
         }
     }
@@ -185,7 +197,7 @@ body {
         align-items: flex-start;
         width: 65%;
         padding: 45px 0;
-        background: #FFFFFF;
+        background: $light-bg-color;
         opacity: 0.9;
     }
 
@@ -207,7 +219,7 @@ body {
                 font-weight: 400;
                 font-size: 68px;
                 text-align: center;
-                color: #262A3F;
+                color: $light-text-color;
             }
 
             &-description {
@@ -215,13 +227,13 @@ body {
                 font-weight: 300;
                 font-size: 18px;
                 text-align: center;
-                color: #262A3F;
+                color: $light-text-color;
                 opacity: 0.8;
             }
 
         }
         .delimiter {
-            background-color: #85BBB1;
+            background-color: $light-accent-color;
             height: 1px;
             width: 100px;
         }
@@ -236,7 +248,7 @@ body {
             font-family: 'Lato';
             font-weight: 300;
             font-size: 18px;
-            color: #262A3F;
+            color: $light-text-color;
             opacity: 0.8;
             line-height: 26px;
         }    
@@ -269,13 +281,13 @@ body {
             font-family: 'Playfair Display';
             font-weight: 400;
             font-size: 40px;
-            color: #262A3F;
+            color: $light-text-color;
         }
 
         &-delimiter {
             width: 570px;
             height: 1px;
-            background-color: #E4E4E4;
+            background-color: $light-delim-colour;
         }
 
         &-description{
@@ -284,7 +296,7 @@ body {
             font-weight: 300;
             font-size: 18px;
             line-height: 26px;
-            color: #262A3F;
+            color: $light-text-color;
             opacity: 0.8;
         }
     }
@@ -356,7 +368,7 @@ body {
             font-family: 'Playfair Display';
             font-weight: 400;
             font-size: 40px;
-            color: #262A3F;
+            color: $light-text-color;
         }
 
         &-description {
@@ -364,7 +376,7 @@ body {
             font-style: normal;
             font-weight: 300;
             font-size: 18px;
-            color: #262A3F;
+            color: $light-text-color;
             opacity: 0.8;
             line-height: 26px;
         }
@@ -390,7 +402,7 @@ body {
         align-items: flex-start;
         width: 65%;
         padding: 75px 0 75px 70px;
-        background: #FFFFFF;
+        background: $light-bg-color;
         opacity: 0.9;
         gap: 70px 100px;
 
@@ -403,7 +415,7 @@ body {
             font-family: 'Playfair Display';
             font-weight: 400;
             font-size: 24px;
-            color: #262A3F;
+            color: $light-text-color;
             margin-bottom: 15px;
         }
 
@@ -411,6 +423,10 @@ body {
             display: flex;
             flex-direction: column;
             gap: 15px;
+
+            li {
+                color: $light-text-color;
+            }
         }
     }
 }
@@ -432,7 +448,7 @@ body {
             font-style: normal;
             font-weight: 400;
             font-size: 40px;
-            color: #262A3F;
+            color: $light-text-color;
         }
 
         &-description {
@@ -440,7 +456,7 @@ body {
         font-style: normal;
         font-weight: 300;
         font-size: 18px;
-        color: #262A3F;
+        color: $light-text-color;
         }
     }
 
@@ -499,7 +515,7 @@ body {
     }
 
     .delimiter {
-        background-color: #E4E4E4;
+        background-color: $light-delim-colour;
         width: 100%;
         height: 1px;
     }
@@ -522,7 +538,7 @@ body {
                 font-style: normal;
                 font-weight: 400;
                 font-size: 40px;
-                color: #262A3F;
+                color: $light-text-color;
             }
 
             &-description{
@@ -531,7 +547,7 @@ body {
                 font-weight: 300;
                 font-size: 18px;
                 line-height: 26px;
-                color: #262A3F;
+                color: $light-text-color;
             }
         }
 
@@ -544,13 +560,14 @@ body {
                 background-color: transparent;
                 border: 0;
                 padding: 12px 0;
-                border-bottom: 1px solid rgba(38, 42, 63, 0.1);
+                border-bottom: 1px solid $light-text-color;
                 font-family: 'Playfair Display';
                 font-style: italic;
                 font-weight: 400;
                 font-size: 18px;
                 letter-spacing: 0.08em;
-                color: rgba(38, 42, 63, 0.5);
+                color: $light-text-color;
+                opacity: 0.5;
                 max-height: 80px;
             }
         }
@@ -563,7 +580,7 @@ body {
     }
 
     .delimiter {
-        background-color: #E4E4E4;
+        background-color: $light-delim-colour;
         width: 100%;
         height: 1px;
     }
@@ -586,7 +603,7 @@ body {
             font-size: 14px;
             line-height: 24px;
             letter-spacing: 0.08em;
-            color: #262A3F;
+            color: $light-text-color;
 
             &--lighter{
                 font-weight: 300;
@@ -596,9 +613,243 @@ body {
 
             &-link {
                 text-decoration: none;
-                color: #262A3F;
+                color: $light-text-color;
             }
         }
     }
 
+}
+
+html.dark {
+    $light-text-color: #FFFFFF;
+    $light-accent-color: #689FF2;
+    $light-button-bg-color: #53F3CD;
+    $light-delim-colour: #515773;
+    $light-button-hovered: #02E0AB;
+    $light-bg-color: #161926;
+
+    body {  
+        background-color: $light-bg-color;
+        background-image: url("../../assets/images/first-screen-image_dark.png");
+    }
+
+    .title--colored {
+        color: $light-accent-color;
+    }
+    
+    .button {
+        color: $light-button-bg-color;
+        &-background {
+            background-color: $light-button-bg-color;
+        }
+    
+        &:hover &-background {
+            background: $light-button-hovered;
+        }
+    
+        &:hover {
+            color: $light-button-bg-color;
+        }
+    
+        &--bordered{
+            border: 1px solid $light-delim-colour;
+        }
+    
+        &--bordered:hover {
+            border: 1px solid $light-button-hovered;
+            color: $light-button-bg-color;
+        }
+    
+        &--bordered:hover &-background {
+            background: $light-button-hovered;
+        }
+    }
+    
+    .header {
+        &__nav {
+            &-link {
+                color: $light-text-color;
+            }
+        }
+    }
+    
+    
+    .join-now {
+        &__content {
+    
+            &-title {
+                color: $light-text-color;
+    
+            }
+    
+            &-subtitle {
+                color: $light-text-color;
+            }
+        }
+    }
+    
+    
+    .statistic {
+        &__content-wrapper {
+            background: $light-bg-color;
+        }
+    
+        &__numbers {
+            &__item {
+                &-title {
+                    color: $light-text-color;
+                }
+    
+                &-description {
+                    color: $light-text-color;
+                }
+            }
+            .delimiter {
+                background-color: $light-accent-color;
+            }
+        }
+    
+        &__content {
+            &__text {
+                color: $light-text-color;
+            }    
+        }
+    
+    }
+    
+    
+    .advantages {
+    
+        &__item {
+
+            &-title {
+                color: $light-text-color;
+            }
+    
+            &-delimiter {
+                background-color: $light-delim-colour;
+            }
+    
+            &-description{
+                color: $light-text-color;
+            }
+        }
+    }
+    
+    
+    .example {
+
+
+    
+        &__text-block{
+
+    
+            &-title{
+
+                color: $light-text-color;
+            }
+    
+            &-description {
+  
+                color: $light-text-color;
+
+            }
+        }
+    }
+    
+    .notion{
+
+        &__content-wrapper {
+
+            background: $light-bg-color;
+
+    
+        }
+    
+        &__item{   
+    
+            &-title {
+
+                color: $light-text-color;
+
+            }
+    
+            &-description-list{
+
+                li {
+                    color: $light-text-color;
+                }
+            }
+        }
+    }
+    
+    .reviews {
+        &__text-block {
+            &-title{
+                color: $light-text-color;
+            }
+
+            &-description {
+                color: $light-text-color;
+            }
+        }
+    
+    
+    }
+    
+    
+    .contact {
+
+    
+        .delimiter {
+            background-color: $light-delim-colour;
+
+        }
+    
+        &__content{
+
+    
+            &__text-block{
+
+    
+                &-title{
+
+                    color: $light-text-color;
+                }
+    
+                &-description{
+
+                    color: $light-text-color;
+                }
+            }
+    
+            &__form{
+ 
+                &-item{
+
+                    border-bottom: 1px solid $light-text-color;
+ 
+                    color: $light-text-color;
+
+                }
+            }
+        }
+    }
+    
+    .footer{
+        .delimiter {
+            background-color: $light-delim-colour;
+
+        }
+        &__content {
+
+            &-item {
+                color: $light-text-color;
+                &-link {
+                    color: $light-text-color;
+                }
+            }
+        }
+    
+    }
 }

@@ -6,6 +6,7 @@
 }
 
 body {
+  background-color: #FFFFFF;
   background-image: url("../../assets/images/first-screen-image_light.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -30,14 +31,14 @@ body {
   line-height: 20px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #F1897B;
+  color: #f1897b;
   text-decoration: none;
   border: 0;
   background-color: transparent;
   position: relative;
 }
 .button-background {
-  background-color: #F1897B;
+  background-color: #f1897b;
   opacity: 0.3;
   height: 13px;
   position: absolute;
@@ -47,10 +48,10 @@ body {
   bottom: 0%;
 }
 .button:hover .button-background {
-  background: #E54F3A;
+  background: #E64F3A;
 }
 .button:hover {
-  color: #F1897B;
+  color: #f1897b;
 }
 .button--bordered {
   background-color: transparent;
@@ -59,10 +60,10 @@ body {
 }
 .button--bordered:hover {
   border: 1px solid #E64F3A;
-  color: #F1897B;
+  color: #f1897b;
 }
 .button--bordered:hover .button-background {
-  background: #E54F3A;
+  background: #E64F3A;
 }
 
 .header {
@@ -121,6 +122,7 @@ body {
   font-weight: 400;
   font-size: 44px;
   line-height: 52px;
+  color: #262A3F;
 }
 .join-now__content-subtitle {
   font-family: "Lato";
@@ -340,6 +342,9 @@ body {
   flex-direction: column;
   gap: 15px;
 }
+.notion__item-description-list li {
+  color: #262A3F;
+}
 
 .reviews .wrapper {
   flex-direction: column;
@@ -452,13 +457,14 @@ body {
   background-color: transparent;
   border: 0;
   padding: 12px 0;
-  border-bottom: 1px solid rgba(38, 42, 63, 0.1);
+  border-bottom: 1px solid #262A3F;
   font-family: "Playfair Display";
   font-style: italic;
   font-weight: 400;
   font-size: 18px;
   letter-spacing: 0.08em;
-  color: rgba(38, 42, 63, 0.5);
+  color: #262A3F;
+  opacity: 0.5;
   max-height: 80px;
 }
 
@@ -497,4 +503,110 @@ body {
 .footer__content-item-link {
   text-decoration: none;
   color: #262A3F;
+}
+
+html.dark body {
+  background-color: #161926;
+  background-image: url("../../assets/images/first-screen-image_dark.png");
+}
+html.dark .title--colored {
+  color: #689FF2;
+}
+html.dark .button {
+  color: #53F3CD;
+}
+html.dark .button-background {
+  background-color: #53F3CD;
+}
+html.dark .button:hover html.dark .button-background {
+  background: #02E0AB;
+}
+html.dark .button:hover {
+  color: #53F3CD;
+}
+html.dark .button--bordered {
+  border: 1px solid #515773;
+}
+html.dark .button--bordered:hover {
+  border: 1px solid #02E0AB;
+  color: #53F3CD;
+}
+html.dark .button--bordered:hover html.dark .button-background {
+  background: #02E0AB;
+}
+html.dark .header__nav-link {
+  color: #FFFFFF;
+}
+html.dark .join-now__content-title {
+  color: #FFFFFF;
+}
+html.dark .join-now__content-subtitle {
+  color: #FFFFFF;
+}
+html.dark .statistic__content-wrapper {
+  background: #161926;
+}
+html.dark .statistic__numbers__item-title {
+  color: #FFFFFF;
+}
+html.dark .statistic__numbers__item-description {
+  color: #FFFFFF;
+}
+html.dark .statistic__numbers .delimiter {
+  background-color: #689FF2;
+}
+html.dark .statistic__content__text {
+  color: #FFFFFF;
+}
+html.dark .advantages__item-title {
+  color: #FFFFFF;
+}
+html.dark .advantages__item-delimiter {
+  background-color: #515773;
+}
+html.dark .advantages__item-description {
+  color: #FFFFFF;
+}
+html.dark .example__text-block-title {
+  color: #FFFFFF;
+}
+html.dark .example__text-block-description {
+  color: #FFFFFF;
+}
+html.dark .notion__content-wrapper {
+  background: #161926;
+}
+html.dark .notion__item-title {
+  color: #FFFFFF;
+}
+html.dark .notion__item-description-list li {
+  color: #FFFFFF;
+}
+html.dark .reviews__text-block-title {
+  color: #FFFFFF;
+}
+html.dark .reviews__text-block-description {
+  color: #FFFFFF;
+}
+html.dark .contact .delimiter {
+  background-color: #515773;
+}
+html.dark .contact__content__text-block-title {
+  color: #FFFFFF;
+}
+html.dark .contact__content__text-block-description {
+  color: #FFFFFF;
+}
+html.dark .contact__content__form-item {
+  border-bottom: 1px solid #FFFFFF;
+  color: #FFFFFF;
+}
+html.dark .footer .delimiter {
+  background-color: #515773;
+}
+html.dark .footer__content-item {
+  color: #FFFFFF;
+}
+html.dark .footer__content-item-link {
+  color: #FFFFFF;
 }/*# sourceMappingURL=styles.css.map */
