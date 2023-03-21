@@ -121,7 +121,9 @@ body {
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between;
-        align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
         gap: 30px;
 
         &-link {
@@ -146,7 +148,9 @@ body {
     .wrapper {
         -ms-flex-direction: column;
         flex-direction: column;
-        align-items: flex-start;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
         gap: 50px;
     }
 
@@ -187,14 +191,25 @@ body {
         background-repeat: no-repeat;
         background-size: contain;
         height: 670px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
         justify-content: flex-end;
     }
 
     &__content-wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        align-items: flex-start;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
         width: 65%;
         padding: 45px 0;
         background: $light-bg-color;
@@ -202,15 +217,29 @@ body {
     }
 
     &__numbers {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         gap: 40px;
 
         &__item {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
             gap: 12px;
             width: 370px;
 
@@ -240,10 +269,17 @@ body {
     }
 
     &__content {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap: 50px;
-        align-items: flex-start;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
         &__text {
             font-family: 'Lato';
             font-weight: 300;
@@ -259,9 +295,15 @@ body {
 
 .advantages {
     .wrapper {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         gap: 50px 0;
         margin: 120px auto
     }
@@ -270,8 +312,13 @@ body {
         width: 570px;
 
         &-text {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
             gap: 30px 0;
             width: 480px;
             padding: 45px;
@@ -313,8 +360,13 @@ body {
 
     &__text {
         padding: 100px 160px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap: 40px;
         position: relative;
 
@@ -350,8 +402,11 @@ body {
 
     .wrapper {
         width: 970px;
-        flex-direction: column;
-        gap: 50px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+                gap: 50px;
     }
 
     &-video {
@@ -359,8 +414,13 @@ body {
     }
 
     &__text-block{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap: 20px;
         width: 90%;
 
@@ -390,16 +450,28 @@ body {
         background-repeat: no-repeat;
         background-size: contain;
         height: 540px;
-        align-items: center;
-        justify-content: flex-end;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
         margin: 120px auto;
     }
 
     &__content-wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: flex-start;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
         width: 65%;
         padding: 75px 0 75px 70px;
         background: $light-bg-color;
@@ -420,8 +492,13 @@ body {
         }
 
         &-description-list{
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
             gap: 15px;
 
             li {
@@ -433,14 +510,22 @@ body {
 
 .reviews {
     .wrapper {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap: 50px;
         margin: 100px  auto;
     }
 
     &__text-block {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap: 20px;
 
         &-title{
@@ -453,16 +538,21 @@ body {
 
         &-description {
             font-family: 'Lato';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 18px;
-        color: $light-text-color;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            color: $light-text-color;
         }
     }
 
     &__list{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
         gap: 30px;
 
         &-item{
@@ -473,10 +563,17 @@ body {
             &__text-block{
                 background: rgba(25, 28, 41, 0.6);background: rgba(25, 28, 41, 0.6);
                 position: absolute;
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
-                flex-direction: column;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+                        -webkit-box-pack: justify;
+                        -ms-flex-pack: justify;
+                        justify-content: space-between;
                 top: 0;
-                justify-content: space-between;
                 padding: 30px 40px;
                 height: 280px;
 
@@ -509,7 +606,10 @@ body {
 
 .contact {
     .wrapper{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap: 60px;
         margin: 100px auto;
     }
@@ -521,13 +621,25 @@ body {
     }
 
     &__content{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
 
         &__text-block, &__form{
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
         }
 
         &__text-block{
@@ -552,7 +664,9 @@ body {
         }
 
         &__form{
-            align-items: flex-start;
+            -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
             gap: 40px;
 
             &-item{
@@ -576,7 +690,10 @@ body {
 
 .footer{
     .wrapper{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .delimiter {
@@ -586,9 +703,16 @@ body {
     }
 
     &__content, &__content__wrapper{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         
         &__wrapper {
             gap: 30px;
