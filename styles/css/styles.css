@@ -60,6 +60,7 @@ body {
 }
 .join-now__content-title {
   font-family: "Playfair Display";
+  font-style: italic;
   font-weight: 400;
   font-size: 44px;
   line-height: 52px;
